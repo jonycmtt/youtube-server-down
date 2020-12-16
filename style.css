@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+::selection {
+    color:#fff;
+    background: #000;
+}
+section {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+section .container h3 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+section .container ul {
+    list-style: none;
+    display: flex;
+    position: relative;
+}
+section .container ul li {
+    margin: 10px 4px;
+}
+section .container ul li a {
+    text-decoration: none;
+}
+section .container ul li a sub {
+    font-size: 10px;
+    color:#16a085;
+}
+section .container ul li form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+section .container ul li form input[type="text"] {
+    width:200px;
+    height:30px;
+    border:1px solid #cdcdcd;
+    padding-left:10px;
+    font-weight: 600;
+    color:#2c2c2c;
+}
+section .container ul li form .search {
+    width:70px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border:1px solid #cdcdcd;
+    border-left:none;
+    cursor: pointer;
+    color:#a4a4a4;
+}
+@media screen and (max-width:480px) {
+    section .container ul {
+        display: block;
+    }
+}
+@media screen and (max-width:320px) {
+    section .container h3 {
+        font-size: 25px;
+    }
+}
